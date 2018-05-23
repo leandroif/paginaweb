@@ -31,7 +31,7 @@ export class InformacionService {
       this.http.get('https://paginaweb-1f164.firebaseio.com/equipo.json')
           .subscribe(
               data => {
-                  console.log(data.json());
+                  //console.log(data.json());
                   this.equipo = data.json();
                   this.cargada_sobre_nosostros = true;
               });
